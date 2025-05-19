@@ -1,13 +1,14 @@
-// TODO: injection
 import { Tenant } from '#domain/tenant/tenant'
 import { TenantRepository } from '#domain/tenant/tenant_repository'
+import { inject } from '@adonisjs/core'
 
+@inject()
 export class CreateTenant {
-  constructor(private tenantRepo: TenantRepository) {}
+  constructor(private tenantRepository: TenantRepository) {}
 
   async execute(data: Tenant['props']) {
     const tenant = new Tenant(data)
     tenant.validate()
-    await this.tenantRepo.create(tenant)
+    return await this.tenantRepository.create(tenant)
   }
 }

@@ -4,13 +4,12 @@ import { TenantInMemoryRepository } from '#infrastructure/repositories/in_memory
 
 test.group('CreateTenant UseCase', () => {
   test('should create a tenant', async ({ assert }) => {
-    // TODO: injection
-    const repo = new TenantInMemoryRepository()
-    const createTenant = new CreateTenant(repo)
+    const tenantRepository = new TenantInMemoryRepository()
+    const createTenant = new CreateTenant(tenantRepository)
 
     await createTenant.execute({ name: 'Tenant A', id: '1' })
 
-    const tenant = await repo.findById('1')
+    const tenant = await tenantRepository.findById('1')
     assert.isNotNull(tenant)
     assert.equal(tenant?.props.name, 'Tenant A')
   })

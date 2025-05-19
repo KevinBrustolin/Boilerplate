@@ -56,9 +56,13 @@ This boilerplate is open to discussion and evolution. Feel free to:
   - Production: generic SMTP
   - Development: MailHog
   - Features planned:
+    - User role, group, permission
+      - Signup
     - Password reset
     - Email verification
     - invitations
+    - impersonate
+    - audit event support
 
 ---
 

@@ -1,5 +1,3 @@
-// TODO: Core Entity + extends
-
 export interface TenantProps {
   id?: string
   name: string

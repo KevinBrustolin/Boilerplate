@@ -20,7 +20,8 @@
     "#infrastructure/*": "./src/infrastructure/*.js",
     "#controllers/*": "./src/infrastructure/controllers/*.js",
     "#middleware/*": "./src/infrastructure/middleware/*.js",
-    "#config/*": "./config/*.js"
+    "#config/*": "./config/*.js",
+    "#providers/*": "./providers/*.js"
   },
   "devDependencies": {
     "@adonisjs/assembler": "^7.8.2",
