@@ -11,7 +11,8 @@
     "test": "node ace test",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "kysely:codegen": "kysely-codegen --out-file=src/infrastructure/kysely/types.ts"
   },
   "imports": {
     "#domain/*": "./src/domain/*.js",
