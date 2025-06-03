@@ -14,7 +14,6 @@
     "typecheck": "tsc --noEmit"
   },
   "imports": {
-    
     "#domain/*": "./src/domain/*.js",
     "#models/*": "./app/models/*.js",
     "#infrastructure/*": "./src/infrastructure/*.js",
@@ -34,11 +33,13 @@
     "@swc/core": "1.10.16",
     "@types/luxon": "^3.6.2",
     "@types/node": "^22.13.2",
+    "@types/pg": "^8.15.4",
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
     "@vitejs/plugin-react": "^4.4.1",
     "eslint": "^9.20.1",
     "hot-hook": "^0.4.0",
+    "kysely-codegen": "^0.18.5",
     "pino-pretty": "^13.0.0",
     "prettier": "^3.5.0",
     "ts-node-maintained": "^10.9.5",
@@ -50,7 +51,6 @@
     "@adonisjs/core": "^6.17.2",
     "@adonisjs/cors": "^2.2.1",
     "@adonisjs/inertia": "^3.1.0",
-    "@adonisjs/lucid": "^21.6.0",
     "@adonisjs/session": "^7.5.1",
     "@adonisjs/shield": "^8.1.2",
     "@adonisjs/static": "^1.1.1",
@@ -58,6 +58,7 @@
     "@inertiajs/react": "^2.0.9",
     "@vinejs/vine": "^3.0.0",
     "edge.js": "^6.2.1",
+    "kysely": "^0.28.2",
     "luxon": "^3.6.1",
     "pg": "^8.16.0",
     "react": "^19.1.0",
